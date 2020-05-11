@@ -4,6 +4,6 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 RUN npm install
 COPY . /usr/src/app
-VOLUME [ "/usr/src/app/resource" ]
+# VOLUME [ "/usr/src/app/resource" ]
 EXPOSE 3000
 CMD [ "npm", "start" ]
